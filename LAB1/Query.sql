@@ -1,4 +1,4 @@
-#1. Create a table student with attributes sno,name marks and dept
+#Create a table student with attributes sno,name marks and dept
 CREATE TABLE STUDENT(
      SNO INT AUTO_INCREMENT PRIMARY KEY,
      NAME VARCHAR(40) NOT NULL,
