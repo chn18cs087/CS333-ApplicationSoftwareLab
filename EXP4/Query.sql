@@ -1,0 +1,34 @@
+#Create and insert values for the following tables DEPARTMENT and INSTRUCTOR (with constraints)
+
+#1. Department table
+#	Code (primary key)
+#	Title 
+#	Dept_name (unique)
+#	Dept_id
+#	Salary(check –salary>2000)
+
+CREATE TABLE DEPARTMENT(
+CODE VARCHAR(10) PRIMARY KEY NOT NULL,
+TITLE VARCHAR(30),
+DEPT_NAME CHAR(60) UNIQUE NOT NULL,
+DEPT_ID INT,
+SALARY INT NOT NULL,
+CHECK(Salary>2000)
+);
+
+INSERT INTO DEPARTMENT VALUES('D1','CS','COMPUTER SCIENCE', '1',50000);
+INSERT INTO DEPARTMENT VALUES('D2','EE','ELECTRICAL ENGINEERING','2',60000);
+
+#2.Instructor table
+#	Name(not null)
+#	Code
+#	Id(default)
+
+CREATE TABLE INSTRUCTOR(
+NAME VARCHAR(20) NOT NULL,
+CODE INT,
+ID INT DEFAULT 0);
+
+INSERT INTO INSTRUCTOR(NAME,CODE) VALUES('MARK' , 101);
+INSERT INTO INSTRUCTOR(NAME,CODE) VALUES('JOHNNY' , 102);
+
